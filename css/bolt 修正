@@ -1,0 +1,14 @@
+font: Lato ; 二つ指定しない
+Raleway は個別でつける
+
+＜header＞
+.bolt
+marginで余白を調整しないー＞margin消す
+.header-right
+marginで余白を調整しないー＞margin消す  ・・一つ上のクラスにクラスを追加してpaddingで余白とる
+headerを固定する
+
+＜１のコンテント＞
+.first flex:box は使わない
+.first-inner marginではなく paddingで余白とる
+
