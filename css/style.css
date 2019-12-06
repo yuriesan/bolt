@@ -3,7 +3,7 @@
 /* 共通項 */
 body {
   box-sizing: border-box;
-  font-family: 'Lota','Raleway';
+  font-family: 'Lata';
   color: #333;
 }
 
@@ -18,14 +18,29 @@ body {
   clear: both;
 }
 
+.title-font {
+  font-size: 24px;
+  font-family: 'Raleway';
+}
+
 /* header部分 */
+
+.header {
+  position: sticky;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.header-inner {
+  padding: 15px;
+  
+}
 
 .bolt {
   color: #4e4e4e;
   font-weight: 900;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .header-right {
@@ -34,7 +49,6 @@ body {
   color: #FFFFFF;
   width: 80px;
   float: right;
-  margin: 10px auto;
   padding: 14px 12px;
   font-size: 12px;
   text-decoration: none;
@@ -54,20 +68,17 @@ body {
 
 /* 1のコンテント */
 
-.first {
+.title {
   background-color: #f2f2f2;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  text-align: center
 }
 
-.first-inner {
-  margin-top: 250px;
-  margin-bottom: 250px;
+.title-inner {
+  padding-top: 250px;
+  padding-bottom: 250px;
 }
 
-.first-title {
+.big-title {
   font-size: 90px;
   color: #74cfae;
   font-weight: 700;
@@ -81,60 +92,64 @@ body {
 
 /* 2のコンテント */
 
-.second {
+.phone {
   background-color: #74cfae;
-  text-align: center;
   padding-top: 50px;
-  padding-bottom: 25px;
 }
 
-.second-text {
+.phone-inner {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.phone-text {
   color: #fff;
   padding-top: 20px;
-}
-
-.second-title {
-  font-size: 24px;
-  padding-bottom: 35px;
 }
 
 .sentence {
   line-height: 1.5;
   font-size: 20px;
+  padding-top: 35px;
 }
 
 /* ３のコンテント */
 
-.third {
+.work {
   background-color: #f2f2f2;
   box-sizing: border-box;
   padding-top: 60px;
   padding-bottom: 70px;
-}
-
-.third-title {
-  font-size: 24px;
-  margin-bottom: 40px;
   text-align: center;
 }
 
 .work-img {
+  padding-top: 40px;
+  padding-bottom: 90px;
   display: flex;
-  flex-direction: column;
-  display: table;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.work-img:nth-child(-n+3) {
+  padding-bottom: 0;
 }
 
 .third-img {
   opacity: 0.7;
   transition: all  0.3s ease;
   display: table-cell;
+  margin-bottom: 80px;
+  display: inline-block;
+  margin-right: 80px;
 }
 
-.third-img:nth-child(3),.third-img:last-child {
-  margin-bottom: 80px;
+.third-img:nth-child(3n) {
+  margin-right: 0;
 }
+
+
 
 .third-img:hover {
   opacity: 1;
@@ -142,34 +157,34 @@ body {
 
 .text-box {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.third-text {
+.work-text {
   font-size: 20px;
   line-height: 1.5;
+  margin-right: 90px;
 }
 
-.button {
-  padding-top: 40px;
-}
-
-.third-button {
+.email-button {
   background-color: #74cfae;
-  color: #fff;
   font-size: 12px;
+  color: #fff;
   text-decoration: none;
   padding: 14px 20px;
   transition: all  0.3s ease;
 }
 
-.third-button:hover {
+.email-button:hover {
   color: #333;
 }
 
 
 /* ４のコンテント */
 
-.fourth {
+.circle {
   background-color: #4e4e4e;
   color: #FFFFFF;
   text-align: center;
@@ -177,20 +192,25 @@ body {
   padding-bottom: 100px;
 }
 
-.fourth-title {
-  font-size: 24px;
+.circle-title {
   margin-bottom: 70px;
 }
 
+.circle-box {
+  display: flex;
+  justify-content: center;
+}
+
 .img-set {
-  margin-bottom: 88px;
+  margin-right: 180px;
 }
 
 .img-set:last-child {
   margin-bottom: 0;
+  margin-right: 0;
 }
 
-.fourth-img {
+.circle-img {
   margin-bottom: 15px;
 }
 
@@ -236,6 +256,11 @@ body {
 
 
 @media screen and (min-width: 1200px) {
+
+  /* .inner {
+    width: 1100px;
+    margin: 0 auto;
+  } */
   
   .menu .fa-bars .fas {
     display: none;
@@ -283,6 +308,11 @@ body {
 
 @media screen and (min-width:768px) and (max-width:1199px) {
   
+  /* .inner {
+    width: 97%;
+    margin: 0 auto;
+  } */
+
   .menu {
     display: none;
   }
@@ -330,6 +360,11 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+
+  /* .inner {
+    width: 97%;
+  } */
+
   .header-right {
     display: none;
   }
