@@ -32,7 +32,7 @@ body {
 }
 
 .header-inner {
-  padding: 15px;
+  padding: 15px 0;
   
 }
 
@@ -137,17 +137,18 @@ body {
   margin-top: 40px;
 }
 
-.work-list {
+.img-link {
   opacity: 0.7;
   transition: all  0.3s ease;
   display: inline-block;
 }
 
-.img-link {
-  font-size: 0;
-}
-.work-list:hover {
+.img-link:hover {
   opacity: 1;
+}
+
+.work-list {
+  display: inline-block;
 }
 
 .text-box {
