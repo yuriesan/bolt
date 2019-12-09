@@ -1,0 +1,82 @@
+全部につけたい奴はbodyよりも*でスタイル当てる  box-sizing: border-box;は共通にする必要性がない？
+margin は 上と左につけるのが基本
+
+クラス名 変更
+ (１とか２とかのクラス名は、順番が変わることもあるからつけない方が良い)
+first  --> title
+second --> phone
+third  --> work　　third-img と コメントアウト直す！！！！！
+fourth --> circle
+
+余白をとるクラスを変える padding上下でとる padding: 60px 0 50px;  上 左右 下 で取れる
+phone --> phone-inner
+work --> work-inner
+circle --> circle-inner
+footer --> footer-inner
+
+h1~h6 の使い方 小見出し的なのはh2  h1はページに一つしか存在しない
+
+<body>
+font: Lato ; 二つ指定しない  名前書き間違え
+Raleway は個別でつける
+
+＜header＞
+.bolt
+marginで余白を調整しないー＞margin消す
+.header-right
+marginで余白を調整しないー＞margin消す  ・・一つ上のクラスにクラスを追加してpaddingで余白とる -->header-inner
+headerを固定するーーーーーされていない！！！！！！！！！
+position: sticky; topとかleftとかの指定する
+
+.header-right width指定しない
+
+＜１のコンテント＞
+.first flex:box は使わない　first　から　titleにクラス名変更した
+.first-inner marginではなく paddingで余白とる  title-inner にクラス名変更した
+
+
+＜２のコンテント＞
+余白の取り方
+.title-font と　.sentence　の余白はmargin --> 要素と要素の間だから
+
+
+＜３のコンテント＞
+.work-img　の余白を　padding-> margin に変更する
+img を　aタグ で囲う  指定がなくてもページ見て判断する
+
+imgが増えても問題なく配置できるように！　justify-content 使わない
+
+third-img でmargin-bottomつけてるけど下の要素でmargin-topとる
+
+＜４のコンテント＞
+
+
+＜sns＞
+ホバーした時の挙動はaタグにつける
+iタグのpaddingをaタグにつける
+
+＜footer＞
+footer-logo ではなく footer-inner クラスにpadding　つける
+
+
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
+fontは ＊ ではなく body で！！
+
+・headerを固定  ----> position:sticky; で top と left 指定した
+
+＜２のコンテント＞
+・文字の横幅指定する --->600pxにした
+
+
+＜３のコンテント＞
+display:flex; で横並びになってるやつに clearfix がついてる
+
+＜sns＞
+fontawsome  alt属性不要（imgのみ）
+
+
+＜フッター＞
+float:right; ----> text-aling: right;   で clearfix 消せる
+
+

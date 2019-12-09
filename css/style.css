@@ -3,6 +3,9 @@
 /* 共通項 */
 * {
   box-sizing: border-box;
+}
+
+body {
   font-family: 'Lato';
 }
 
@@ -21,6 +24,8 @@
 
 .header {
   position: sticky;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: #fff;
   z-index: 100;
@@ -59,7 +64,7 @@
   margin: 20px;
 }
 
-/* 1のコンテント */
+/* titleのコンテント */
 
 .title {
   background-color: #f2f2f2;
@@ -82,7 +87,7 @@
   font-size: 30px;
 }
 
-/* 2のコンテント */
+/* phone-imgがあるコンテント */
 
 .phone {
   background-color: #74cfae;
@@ -108,9 +113,10 @@
   line-height: 1.5;
   font-size: 20px;
   margin-top: 35px;
+  width: 600px;
 }
 
-/* ３のコンテント */
+/* work-listのコンテント */
 
 .work {
   background-color: #f2f2f2;
@@ -136,7 +142,7 @@
   opacity: 1;
 }
 
-.third-img {
+.work-list {
   display: inline-block;
 }
 
@@ -164,7 +170,7 @@
 }
 
 
-/* ４のコンテント */
+/* circle-imgがあるコンテント */
 
 .circle {
   background-color: #4e4e4e;
@@ -188,7 +194,7 @@
   font-size: 16px;
 }
 
-/* ５のコンテント */
+/* snsのコンテント */
 
 .sns {
   background-color: #f2f2f2;
@@ -221,11 +227,11 @@
 
 .footer-inner {
   padding: 20px 0 25px;
+  text-align: right;
 }
 
 .footer-logo {
   color: #fff;
-  float: right;
 }
 
 
