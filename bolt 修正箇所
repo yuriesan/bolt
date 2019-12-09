@@ -98,7 +98,7 @@ pc -> tb -> sp
 
 <!-- phone-imgがあるコンテント -->
 
-.sentence が左寄せになってる
+.sentence が左寄せになってる  横幅１００％でおっけー
 .phone-text padding ---> margin に変更する
 
 <!-- work-listのコンテント -->
@@ -141,3 +141,6 @@ aタグの範囲！広すぎ！
 .sns-link スタイルの重複 width:100%; だけつける
 
 <!-- フッター -->
+
+
+aタグ imgタグ にできる謎余白！！ --->  aタグを block要素にする or imgタグに vertical-aling: bottom; つける
