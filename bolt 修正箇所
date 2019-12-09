@@ -79,4 +79,65 @@ fontawsome  alt属性不要（imgのみ）
 ＜フッター＞
 float:right; ----> text-aling: right;   で clearfix 消せる
 
+-------------------------------------------------------------
 
+<header>
+上下左右で padding ついてる ---> 上下だけでOK！
+
+
+
+<レスポンシブ>
+
+pc -> tb -> sp
+どんどん上書きしていけるようにする  ----> tb の min-width は必要ない
+
+
+🌟PC
+
+⭐️タブレット
+
+<!-- phone-imgがあるコンテント -->
+
+.sentence が左寄せになってる
+.phone-text padding ---> margin に変更する
+
+<!-- work-listのコンテント -->
+
+imgのしたの小さい余白 消す
+aタグの範囲！広すぎ！
+６枚目の画像の下のmarginはだめ ---> .text-box に margin-top つける
+
+
+<!-- circle-imgがあるコンテント -->
+
+
+
+<!-- snsのコンテント -->
+
+.sns-link 横幅の指定の仕方 ％ にする (レスポンシブで横幅指定するときは％かremが基本)
+
+
+<!-- フッター -->
+
+⭐️スマホ
+
+<!-- ヘッダー -->
+
+.bar margin使わない  pointerつける
+
+<!-- titleのコンテント -->
+
+<!-- phone-imgがあるコンテント -->
+
+
+<!-- work-listのコンテント -->
+
+.work-text <br>の改行いらない
+
+<!-- circle-imgがあるコンテント -->
+
+<!-- snsのコンテント -->
+
+.sns-link スタイルの重複 width:100%; だけつける
+
+<!-- フッター -->
